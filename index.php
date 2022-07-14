@@ -1,4 +1,5 @@
 <?php
+require_once 'Helpers/Helpers.php';
 $ruta = !empty($_GET['url']) ? $_GET['url']: 'Home/index';
 $array = explode('/',$ruta);
 $controller = $array[0];
