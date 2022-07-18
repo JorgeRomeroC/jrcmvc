@@ -1,4 +1,4 @@
-<?php headerAdmin();?>
+<?php headerAdmin($data);?>
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -6,7 +6,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Blank Page</h1>
+                        <h1><?php echo $data['page_name'];?></h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
@@ -36,6 +36,7 @@
                     </div>
                 </div>
                 <div class="card-body">
+                    <?php debug($data);?>
                     Start creating your amazing application!
                 </div>
                 <!-- /.card-body -->
@@ -50,4 +51,4 @@
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-<?php footerAdmin();?>
+<?php footerAdmin($data);?>

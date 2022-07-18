@@ -14,11 +14,13 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="<?php echo media();?>/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo media();?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="Assets/dist/js/adminlte.min.js"></script>
+<script src="<?php echo media();?>/dist/js/adminlte.min.js"></script>
+<!-- script admin -->
+<script src="<?php echo media();?>/app/js/<?php echo $data['function_js'];?>"></script>
 
 </body>
 </html>

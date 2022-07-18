@@ -4,6 +4,8 @@ class Dashboard extends Controllers
 {
     public function index()
     {
-        $this->views->getView($this,'index');
+        $data['page_name'] = "Dashboard";
+        $data['function_js'] = "Dashboard.js";
+        $this->views->getView($this,'index',$data);
     }
 }
